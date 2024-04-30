@@ -18,8 +18,10 @@ function App() {
     if (charAllowed) str += "~`!@#$%^&*+-=-_"
 
     for (let i = 0; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1)
+      let char = Math.floor(Math.random() * str.length)
+      console.log("Index value : " + i+" After Floor Value " +char);
       pass += str.charAt(char)
+      console.log(pass);
     }
     setPassword(pass)
   },
@@ -63,7 +65,7 @@ function App() {
               max={25}
               value={length}
               className='cursor-pointer'
-              onChange={(e)=>{setLength(e.target.value)}}
+              onChange={(x)=>{setLength(x.target.value)}}
             />
             <label>Length: {length}</label>
             <div className='flex items-center gap-x-1'>
