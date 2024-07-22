@@ -8,10 +8,11 @@
 
 .display-user{
     margin-top: 20px;
-    height: auto;
+    height: 300px;
     padding: 10px;
     border: 1px solid orange;
     padding-left: 50px;
+    overflow: scroll;
 
 }
 .add-user-input{
@@ -31,6 +32,32 @@
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
-    width: 300px;
-    font: bold;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.delete-btn{
+    background-color: red;
+    width: 80px;
+    height: 30px;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: bolder;
+}
+.remove-user-btn{
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightslategray;
+    padding-left: 10px;
+    padding-top: 5px;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
 }
